@@ -1,0 +1,162 @@
+[
+  {
+    "name": "John Doe",
+    "age": 30,
+    "department": "HR",
+    "salary": 50000,
+    "hireDate": "2015-03-25",
+    "performanceScore": 85
+  },
+  {
+    "name": "Jane Smith",
+    "age": 45,
+    "department": "Finance",
+    "salary": 75000,
+    "hireDate": "2010-06-01",
+    "performanceScore": 90
+  },
+  {
+    "name": "Sam Brown",
+    "age": 29,
+    "department": "IT",
+    "salary": 80000,
+    "hireDate": "2018-11-15",
+    "performanceScore": 88
+  },
+  {
+    "name": "Lisa Johnson",
+    "age": 34,
+    "department": "IT",
+    "salary": 85000,
+    "hireDate": "2016-01-12",
+    "performanceScore": 95
+  },
+  {
+    "name": "Mike Green",
+    "age": 50,
+    "department": "HR",
+    "salary": 60000,
+    "hireDate": "2005-09-23",
+    "performanceScore": 82
+  },
+  {
+    "name": "Emily Davis",
+    "age": 26,
+    "department": "Finance",
+    "salary": 65000,
+    "hireDate": "2019-04-02",
+    "performanceScore": 80
+  },
+  {
+    "name": "Kevin White",
+    "age": 31,
+    "department": "Sales",
+    "salary": 55000,
+    "hireDate": "2017-07-11",
+    "performanceScore": 86
+  },
+  {
+    "name": "Anna Black",
+    "age": 27,
+    "department": "Sales",
+    "salary": 58000,
+    "hireDate": "2020-01-19",
+    "performanceScore": 78
+  },
+  {
+    "name": "George Wilson",
+    "age": 40,
+    "department": "IT",
+    "salary": 90000,
+    "hireDate": "2012-05-20",
+    "performanceScore": 92
+  },
+  {
+    "name": "Tina Scott",
+    "age": 33,
+    "department": "Marketing",
+    "salary": 70000,
+    "hireDate": "2014-12-01",
+    "performanceScore": 85
+  },
+  {
+    "name": "Paul Adams",
+    "age": 38,
+    "department": "Finance",
+    "salary": 72000,
+    "hireDate": "2011-03-14",
+    "performanceScore": 89
+  },
+  {
+    "name": "Karen Baker",
+    "age": 25,
+    "department": "Marketing",
+    "salary": 45000,
+    "hireDate": "2021-08-23",
+    "performanceScore": 80
+  },
+  {
+    "name": "Chris Evans",
+    "age": 29,
+    "department": "Sales",
+    "salary": 62000,
+    "hireDate": "2016-06-18",
+    "performanceScore": 84
+  },
+  {
+    "name": "Olivia Taylor",
+    "age": 36,
+    "department": "HR",
+    "salary": 56000,
+    "hireDate": "2010-09-30",
+    "performanceScore": 87
+  },
+  {
+    "name": "Steve Rogers",
+    "age": 32,
+    "department": "IT",
+    "salary": 78000,
+    "hireDate": "2019-01-05",
+    "performanceScore": 88
+  },
+  {
+    "name": "Jessica King",
+    "age": 28,
+    "department": "Marketing",
+    "salary": 48000,
+    "hireDate": "2022-03-14",
+    "performanceScore": 83
+  },
+  {
+    "name": "Bruce Wayne",
+    "age": 41,
+    "department": "Sales",
+    "salary": 64000,
+    "hireDate": "2009-02-28",
+    "performanceScore": 91
+  },
+  {
+    "name": "Diana Prince",
+    "age": 37,
+    "department": "Finance",
+    "salary": 85000,
+    "hireDate": "2011-12-17",
+    "performanceScore": 94
+  },
+  {
+    "name": "Tony Stark",
+    "age": 39,
+    "department": "IT",
+    "salary": 95000,
+    "hireDate": "2010-04-25",
+    "performanceScore": 97
+  },
+  {
+    "name": "Natasha Romanoff",
+    "age": 35,
+    "department": "Marketing",
+    "salary": 73000,
+    "hireDate": "2013-07-09",
+    "performanceScore": 89
+  }
+]

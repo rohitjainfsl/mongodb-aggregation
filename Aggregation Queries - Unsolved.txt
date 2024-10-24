@@ -1,0 +1,66 @@
+1. Find all mybooks published after 2015:
+
+
+2. Find all mybooks written by "J.K. Rowling":
+
+
+3. Find all mybooks by J.K. Rowling with more than 10,000,000 copies sold:
+
+
+3. Group mybooks by genre and calculate the total number of mybooks in each genre:
+
+
+4. Same query as 3 by with group name as "genreNames":
+
+
+5. Group sales by book title and sum the total sales for each book:
+
+
+6. Sort books by year published in descending order:
+
+
+7. Sort books by title in alphabetical order.
+
+
+8. Sorting (5) in descending order of total sales:
+
+
+9. Get the top 5 books with the highest ratings:
+
+
+10. Limit the number of books displayed to 10:
+
+
+11. Show only the title and author of books.
+
+
+12. Exclude the copiesSold and rating fields from the output.
+
+
+13. Join the authors collection with the books collection by authorId.
+
+
+14. Join the reviews collection with the books collection to add user reviews.
+
+
+15. Calculate the total sales of books across all genres.
+
+
+16. Calculate the total pages for all books in the library.
+
+
+17. Get the sum of books published in the year 1990:
+
+
+18. Find the average rating of books in the "Fantasy" genre.
+
+
+19. Calculate the average price of books.
+
+
+20. Find the book with the minimum price.
+
+
+21. Find the earliest published book in the collection.
+
+

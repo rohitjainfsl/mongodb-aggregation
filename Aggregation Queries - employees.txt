@@ -1,0 +1,93 @@
+//Count the total number of employees in each department.
+db.employees.aggregate([
+  { 
+    $group: { 
+      _id: "$department", 
+      totalEmployees: { $sum: 1 } 
+    } 
+  }
+])
+
+//Calculate the total salary paid to employees in each department.
+db.employees.aggregate([
+  { 
+    $group: { 
+      _id: "$department", 
+      totalSalary: { $sum: "$salary" } 
+    } 
+  }
+])
+
+//Calculate the average performance score for employees in each department.
+db.employees.aggregate([
+  { 
+    $group: { 
+      _id: "$department", 
+      avgPerformanceScore: { $avg: "$performanceScore" } 
+    } 
+  }
+])
+
+//Find all employees who were hired after 2015.
+db.employees.aggregate([
+  { 
+    $match: { hireDate: { $gt: new ISODate("2015-01-01") } }
+  }
+])
+
+//Sort all employees in descending order of their salary.
+db.employees.aggregate([
+  { 
+    $sort: { salary: -1 } 
+  }
+])
+
+//Filter employees with a salary greater than 70,000 and only project their name and salary.
+db.employees.aggregate([
+  { 
+    $match: { salary: { $gt: 70000 } } 
+  },
+  { 
+    $project: { 
+      _id: 0, 
+      name: 1, 
+      salary: 1 
+    }
+  }
+])
+
+//Assume there’s another collection called departments with department details. Join the departments collection with employees to add department info.
+db.employees.aggregate([
+  { 
+    $lookup: {
+      from: "departments",
+      localField: "department",
+      foreignField: "name",
+      as: "departmentDetails"
+    }
+  }
+])
+
+//Find the minimum and maximum salary in each department.
+db.employees.aggregate([
+  { 
+    $group: { 
+      _id: "$department", 
+      minSalary: { $min: "$salary" }, 
+      maxSalary: { $max: "$salary" }
+    }
+  }
+])
+
+//Calculate the total salary for all employees above the age of 30.
+db.employees.aggregate([
+  { 
+    $match: { age: { $gt: 30 } }
+  },
+  { 
+    $group: { 
+      _id: null, 
+      totalSalary: { $sum: "$salary" }
+    }
+  }
+])

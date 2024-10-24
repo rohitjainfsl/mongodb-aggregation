@@ -1,0 +1,191 @@
+[
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "Fiction",
+    "yearPublished": 1960,
+    "price": 7.99,
+    "rating": 4.9,
+    "copiesSold": 5000000
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "Dystopian",
+    "yearPublished": 1949,
+    "price": 6.99,
+    "rating": 4.8,
+    "copiesSold": 3000000
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Fiction",
+    "yearPublished": 1925,
+    "price": 10.99,
+    "rating": 4.4,
+    "copiesSold": 1500000
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "genre": "Non-Fiction",
+    "yearPublished": 2014,
+    "price": 12.99,
+    "rating": 4.7,
+    "copiesSold": 2000000
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "genre": "Fiction",
+    "yearPublished": 1951,
+    "price": 8.99,
+    "rating": 4.0,
+    "copiesSold": 3000000
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "genre": "Dystopian",
+    "yearPublished": 1932,
+    "price": 9.99,
+    "rating": 4.5,
+    "copiesSold": 2000000
+  },
+  {
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "genre": "Post-Apocalyptic",
+    "yearPublished": 2006,
+    "price": 13.99,
+    "rating": 4.6,
+    "copiesSold": 1200000
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "genre": "Romance",
+    "yearPublished": 1813,
+    "price": 5.99,
+    "rating": 4.2,
+    "copiesSold": 4000000
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "yearPublished": 1937,
+    "price": 8.49,
+    "rating": 4.9,
+    "copiesSold": 6000000
+  },
+  {
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "yearPublished": 1954,
+    "price": 15.99,
+    "rating": 4.8,
+    "copiesSold": 15000000
+  },
+  {
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "genre": "Adventure",
+    "yearPublished": 1851,
+    "price": 7.50,
+    "rating": 4.1,
+    "copiesSold": 500000
+  },
+  {
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "genre": "Historical Fiction",
+    "yearPublished": 1869,
+    "price": 12.49,
+    "rating": 4.7,
+    "copiesSold": 1200000
+  },
+  {
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "genre": "Dystopian",
+    "yearPublished": 2008,
+    "price": 7.99,
+    "rating": 4.8,
+    "copiesSold": 3500000
+  },
+  {
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "genre": "Thriller",
+    "yearPublished": 2003,
+    "price": 9.99,
+    "rating": 4.5,
+    "copiesSold": 8000000
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "genre": "Adventure",
+    "yearPublished": 1988,
+    "price": 6.49,
+    "rating": 4.3,
+    "copiesSold": 6500000
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "genre": "Fantasy",
+    "yearPublished": 1997,
+    "price": 10.99,
+    "rating": 4.9,
+    "copiesSold": 12000000
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author": "J.K. Rowling",
+    "genre": "Fantasy",
+    "yearPublished": 1998,
+    "price": 10.99,
+    "rating": 4.8,
+    "copiesSold": 10000000
+  },
+  {
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "genre": "Non-Fiction",
+    "yearPublished": 1988,
+    "price": 11.99,
+    "rating": 4.6,
+    "copiesSold": 9000000
+  },
+  {
+    "title": "The Name of the Wind",
+    "author": "Patrick Rothfuss",
+    "genre": "Fantasy",
+    "yearPublished": 2007,
+    "price": 14.99,
+    "rating": 4.7,
+    "copiesSold": 1200000
+  },
+  {
+    "title": "The Shining",
+    "author": "Stephen King",
+    "genre": "Horror",
+    "yearPublished": 1977,
+    "price": 8.99,
+    "rating": 4.6,
+    "copiesSold": 3000000
+  },
+  {
+    "title": "The Handmaid's Tale",
+    "author": "Margaret Atwood",
+    "genre": "Dystopian",
+    "yearPublished": 1985,
+    "price": 9.49,
+    "rating": 4.3,
+    "copiesSold": 2000000
+  }
+]

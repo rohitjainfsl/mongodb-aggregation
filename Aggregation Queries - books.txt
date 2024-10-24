@@ -1,0 +1,165 @@
+1. Find all mybooks published after 2015:
+db.mybooks.aggregate([
+  { $match: { yearPublished: { $gt: 2015 } } }
+])
+
+
+2. Find all mybooks written by "J.K. Rowling":
+db.mybooks.aggregate([
+  { $match: { author: "J.K. Rowling" } }
+])
+
+
+3. Find all mybooks by J.K. Rowling with more than 10,000,000 copies sold:
+db.mybooks.aggregate([
+  {
+    $match: {
+      author: "J.K. Rowling",
+      copiesSold: { $gt: 10000000 }
+    }
+  }
+])
+
+3. Group mybooks by genre and calculate the total number of mybooks in each genre:
+db.mybooks.aggregate([
+  { $group: { _id: "$genre", totalmybooks: { $sum: 1 } } }
+])
+
+4. Same query as 3 by with group name as "genreNames":
+db.mymybooks.aggregate([
+  { 
+    $group: { 
+      _id: "$genre", 
+      totalmybooks: { $sum: 1 } 
+    }
+  },
+  { 
+    $project: {
+      genreNames: "$_id",   // Rename _id to genreNames
+      totalmybooks: 1,        // Keep totalmybooks as is
+      _id: 0                // Exclude _id from the final result
+    }
+  }
+])
+
+
+5. Group sales by book title and sum the total sales for each book:
+db.mymybooks.aggregate([
+  { $group: { _id: "$bookTitle", totalSales: { $sum: "$copiesSold" } } }
+])
+
+
+6. Sort books by year published in descending order:
+db.mybooks.aggregate([
+  { $sort: { yearPublished: -1 } }
+])
+
+
+7. Sort books by title in alphabetical order.
+db.mybooks.aggregate([
+  { $sort: { title: 1 } }
+])
+
+
+
+8. Sorting (5) in descending order of total sales:
+db.mybooks.aggregate([
+  { 
+    $group: { 
+      _id: "$title", 
+      totalSales: { $sum: "$copiesSold" } 
+    } 
+  },
+  { 
+    $sort: { totalSales: -1 }  // Sort by totalSales in descending order
+  }
+])
+
+
+9. Get the top 5 books with the highest ratings:
+db.mybooks.aggregate([
+  { $sort: { rating: -1 } },
+  { $limit: 5 }
+])
+
+
+10. Limit the number of books displayed to 10:
+db.mybooks.aggregate([
+  { $limit: 10 }
+])
+
+11. Show only the title and author of books.
+db.mybooks.aggregate([
+  { $project: { title: 1, author: 1, _id: 0 } }
+])
+
+
+12. Exclude the copiesSold and rating fields from the output.
+db.mybooks.aggregate([
+  { $project: { copiesSold: 0, rating: 0 } }
+])
+
+
+13. Join the authors collection with the books collection by authorId.
+db.mybooks.aggregate([
+  { $lookup: { from: "authors", localField: "authorId", foreignField: "_id", as: "authorDetails" } }
+])
+
+
+14. Join the reviews collection with the books collection to add user reviews.
+db.mybooks.aggregate([
+  { $lookup: { from: "reviews", localField: "_id", foreignField: "bookId", as: "bookReviews" } }
+])
+
+
+
+15. Calculate the total sales of books across all genres.
+db.mybooks.aggregate([
+  { $group: { _id: null, totalSales: { $sum: "$copiesSold" } } }
+])
+
+
+16. Calculate the total pages for all books in the library.
+db.mybooks.aggregate([
+  { $group: { _id: null, totalPages: { $sum: "$pageCount" } } }
+])
+
+
+17. Get the sum of books published in the year 1990:
+db.mybooks.aggregate([
+  { 
+    $match: { yearPublished: 1990 } 
+  },
+  { 
+    $group: { 
+      _id: null,
+      totalBooks: { $sum: 1 } 
+    }
+  }
+])
+
+
+18. Find the average rating of books in the "Fantasy" genre.
+db.mybooks.aggregate([
+  { $match: { genre: "Fantasy" } },
+  { $group: { _id: "$genre", avgRating: { $avg: "$rating" } } }
+])
+
+
+19. Calculate the average price of books.
+db.mybooks.aggregate([
+  { $group: { _id: null, avgPrice: { $avg: "$price" } } }
+])
+
+
+20. Find the book with the minimum price.
+db.mybooks.aggregate([
+  { $group: { _id: null, minPrice: { $min: "$price" } } }
+])
+
+
+21. Find the earliest published book in the collection.
+db.mybooks.aggregate([
+  { $group: { _id: null, earliestPublication: { $min: "$yearPublished" } } }
+])
+
